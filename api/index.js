@@ -86,10 +86,16 @@ module.exports = function () {
           console.log("getting current agent failed!");
           return;
         }
-
+        if (agent !== null) {
+          return res.send({
+            message: "current agent!",
+            success: true,
+            data: agent,
+          });
+        }
         return res.send({
-          message: "current agent!",
-          success: true,
+          message: "wrong agent!",
+          success: false,
           data: agent,
         });
       }
@@ -172,8 +178,8 @@ module.exports = function () {
         //////////////////////////////////////////////////
         var currentAgent, otherAgent;
         if (
-          agents[0].firstname == req.body.firstname &&
-          agents[0].lastname == req.body.lastname
+          agents[0].firstname === req.body.firstname &&
+          agents[0].lastname === req.body.lastname
         ) {
           currentAgent = agents[0];
           otherAgent = agents[1];
@@ -202,7 +208,7 @@ module.exports = function () {
               }
             }
             for (var j = 0; j < contacts.length; j++) {
-              if (contacts[j].zipcode == key) {
+              if (contacts[j].zipcode === key) {
                 break;
               }
             }
