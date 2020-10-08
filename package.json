@@ -1,0 +1,28 @@
+{
+  "name": "mulu-backend",
+  "version": "1.0.0",
+  "description": "test project backend",
+  "main": "app.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "joi": "^17.2.1",
+    "mongoose": "^5.10.8",
+    "zipcode-city-distance": "^1.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gl-man/mulu_backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gl-man/mulu_backend/issues"
+  },
+  "homepage": "https://github.com/gl-man/mulu_backend#readme"
+}

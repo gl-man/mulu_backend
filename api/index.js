@@ -214,7 +214,7 @@ module.exports = function () {
         return res.send({
           message: "nearby contacts!",
           success: true,
-          data: contacts,
+          data: result,
         });
       });
     });
