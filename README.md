@@ -1,6 +1,6 @@
 # Project Title
 
-Mulu backend test project using Node.js
+the back-end of a mulu test project using Node.js
 
 ---
 ## Requirements
