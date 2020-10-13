@@ -14,8 +14,8 @@ httpApp.use(bodyParser.urlencoded({ limit: "5mb", extended: true }));
 httpApp.use(bodyParser.json({ limit: "5mb" }));
 httpApp.use(cors());
 
-var api = require("./api")();
-httpApp.use("/api", api);
+var controller = require("./controller")();
+httpApp.use("/", controller);
 
 mongoose
   .connect(config.mongodb_url)

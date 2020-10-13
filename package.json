@@ -9,6 +9,7 @@
     "http": "0.0.1-security",
     "joi": "^17.2.1",
     "mongoose": "^5.10.8",
+    "rand-token": "^1.0.1",
     "zipcode-city-distance": "^1.0.6"
   },
   "devDependencies": {},

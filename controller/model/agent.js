@@ -5,6 +5,14 @@ const mongoose = require("mongoose");
 const Agent = mongoose.model(
   "Agent",
   new mongoose.Schema({
+    username: {
+      type: String,
+      required: true,
+    },
+    password: {
+      type: String,
+      required: true,
+    },
     firstname: {
       type: String,
       required: true,
@@ -44,6 +52,8 @@ const Agent = mongoose.model(
 
 function validateAgent(item) {
   const schema = {
+    username: Joi.string().required(),
+    password: Joi.string().required(),
     firstname: Joi.string().required(),
     lastname: Joi.string().required(),
     age: Joi.number().required(),
